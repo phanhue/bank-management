@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form th:action="@{/add-process}" th:object="${bank}" method="post">
+    <label>Bank name:</label>
+    <input type="text" th:field="*{bankname}"/>
+    <br/>
+    <label> Bank Account:</label>
+    <input type="text" th:field="*{bankaccount}"/>
+    <br/>
+    <label>User Name:</label>
+    <input type="text" th:field="*{username}"/>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
